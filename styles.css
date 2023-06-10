@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap'); 
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.hero-section{
+    text-align: center;
+    background-image: url(img2.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+.hero-text{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    text-shadow: 0 0 3px black;
+    
+}
+.hero-content{
+    font-size: 60px;
+}
+
+.black-box-section{
+    background-color: black;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.black-box-section h1{
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 60px;
+    text-align: center;
+}
+.black-box-section span{
+    font-size: 80px;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px,1fr));
+    max-width: 1100px;
+    margin: 50px auto;
+    gap: 20px;
+}
+.card{
+    max-width: 340px;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px;
+}
+.card:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 6px black;
+    background-color: black;
+    color: white;
+}
+.card-content{
+    padding: 20px;
+}
+.card-content h3{
+    margin-bottom: 10px;
+}
+.card-image{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px 10px 0 0;
+    height: 15rem;
+}
+.grid-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-section{
+    display: flex;
+    gap: 50px;
+}
+.bottom-section h3{
+    font-size: 3rem;
+}
+.Contact{
+    background: linear-gradient(to left,#2222153e,#050546b7);
+    margin: 20px;
+}
+.About{
+    background: linear-gradient(to left,#2222153e,#0808d3bf);
+    margin: 20px;
+}
+.Contact, .About{
+    min-height: 300px;
+    color: white;
+    padding:32px;
+}
+.Contact>h2 , .About>h2{
+    font-size: 45px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.Contact p , .About p{
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:786px) {
+    .hero-section{
+        min-height: 50vh;
+    }
+    .hero-text{
+        font-size: 20px;
+    }
+    .hero-content{
+        font-size: 40px;
+    }
+    .black-box-section h1,.black-box-section span{
+        font-size: 24px;
+    }
+    .bottom-section{
+        flex-direction: column;
+    }
+    .card-container{
+        flex-direction: column;
+        align-items: center;
+    }
+}
